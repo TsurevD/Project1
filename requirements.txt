@@ -1,0 +1,21 @@
+# Imported by Cohort.ipynb and RFM_Analysis.ipynb:
+#   pandas, numpy, matplotlib, seaborn
+# (warnings, operator, re, and datetime are in the standard library.)
+#
+# The notebooks do not record package versions.
+# Cohort.ipynb was executed on Python 3.7.3 and calls
+# pd.read_excel(..., infer_datetime_format=True). pandas 1.0.5 still
+# accepts that keyword and forwards it. pandas 1.1 and later raise TypeError.
+# seaborn.distplot, used for the order histogram, remains available here
+# (it was removed in seaborn 0.14).
+#
+# Install this file with Python 3.7 or 3.8. pandas 1.0.5 has no wheels
+# for Python 3.9+, which is the version recorded in RFM_Analysis.ipynb.
+numpy==1.18.5
+pandas==1.0.5
+matplotlib==3.3.4
+seaborn==0.11.2
+
+# Not imported by name. pandas 1.0 defaults read_excel to the xlrd engine,
+# and only xlrd 1.2.0 still opens .xlsx files.
+xlrd==1.2.0
